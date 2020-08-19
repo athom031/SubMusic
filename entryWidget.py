@@ -4,6 +4,7 @@ import os                      # make directory and paths for new utterence fold
 from pydub import AudioSegment # Open Source Python Library to process Audio as array
 
 #------------------------------------ DEFINE GLOBAL ------------------------------------#
+# INCLUDE ENDING / on mac or \\ on windows
 
 PARENT_DIR = '/Users/alex/Documents/GitHub/SubMusic/'
 #where newly exported audio will initially go
