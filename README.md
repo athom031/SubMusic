@@ -28,8 +28,9 @@ Let's get rid of that.
 * https://pip.pypa.io/en/stable/installing/pydub 
 2. Use pip to install pydub and use AudioSegment.
 * https://pypi.org/project/pydub/
-3. Make sure you install ffmpeg for dealing with mp3.
+3. Make sure you install ffmpeg or libav for dealing with mp3.
 * https://ffmpeg.org/download.html
+* https://libav.org/
 
 ## Getting Started
 
