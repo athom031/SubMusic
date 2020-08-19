@@ -3,9 +3,11 @@ import sys
 import os                      # make directory and paths for new utterence folders
 from pydub import AudioSegment # Open Source Python Library to process Audio as array
 
-os.environ["PATH"] += os.pathsep + '/usr/local/bin'
-#song = subprocess.Popen(['mpg123','-q', '/Users/alex/Documents/GitHub/SubMusic/MusicFiles/HummaSong.mp3']).wait()
-song = AudioSegment.from_wav('/Users/alex/Documents/GitHub/SplitScript/raw/Alex_Test1.wav')
+
+AudioSegment.converter = "/usr/local/Cellar/ffmpeg/4.3.1-with-options_2/bin/ffmpeg"
+
+
+
 '''
 
 def close_window():
