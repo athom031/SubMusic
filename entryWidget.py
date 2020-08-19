@@ -68,6 +68,7 @@ def cut_wav_file():
             changed_file = name_of_song + '_Improved.mp3'
             new_audio.export(changed_file, format="mp3")
             os.rename(PARENT_DIR + changed_file, NEW_MUSIC_DIR + name_of_song + '.mp3')
+            os.rename(OLD_MUSIC_DIR + name_of_song + '.mp3', OLD_MUSIC_DIR + name_of_song + '_outdated.mp3')
             string_to_display = "____Song has been Modified!_____"
     
     label_4 = Label(my_window, font = 'Helvetica 40')

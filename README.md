@@ -22,6 +22,12 @@ Let's get rid of that.
 2. Convert time index of start and stop to ms.
 3. Export the desired music segment to new directory.
 
+
+## Demo
+
+Fixing the Humma Song to take out the entire unnecessary pop rap verse.
+![DEMO](https://github.com/athom031/SubMusic/blob/master/Demo.png)
+
 ## Prerequisites
 
 1. Use pip to install python files.
@@ -55,9 +61,3 @@ python -W ignore entryWidget.py
 ## Inspiration
 
 Not being able to do it easily for so many of my favorite songs.
-
-
-## Demo
-
-Fixing the Humma Song to take out the entire unnecessary pop rap verse.
-![DEMO](https://github.com/athom031/SubMusic/blob/master/Demo.png)
