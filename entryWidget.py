@@ -3,12 +3,16 @@ import sys
 import os                      # make directory and paths for new utterence folders
 from pydub import AudioSegment # Open Source Python Library to process Audio as array
 
+#------------------------------------ DEFINE GLOBAL ------------------------------------#
 
-AudioSegment.converter = "/usr/local/Cellar/ffmpeg/4.3.1-with-options_2/bin/ffmpeg"
+PARENT_DIR = '/Users/alex/Documents/GitHub/SubMusic/'
+#where newly exported audio will initially go
+
+OLD_MUSIC_DIR = '/Users/alex/Documents/GitHub/SubMusic/MusicFiles/'
+NEW_MUSIC_DIR = '/Users/alex/Documents/GitHub/SubMusic/changedAudio/'
 
 
-
-'''
+#---------------------------------------------------------------------------------------#
 
 def close_window():
     my_window.destroy()
@@ -24,12 +28,13 @@ def convertMinToMS(entryString):
         #convert string time index to ms
 
     except ValueError:
-        return (-1)
+        return -1
+
 
 def cut_wav_file():
     name_of_song = entry_1.get()
     
-    mp3_directory = '/Users/alex/Documents/GitHub/SubMusic/MusicFiles/' + name_of_song + '.mp3'
+    mp3_directory = OLD_MUSIC_DIR + name_of_song + '.mp3'
     string_to_display = ''
     
     try: 
@@ -41,28 +46,29 @@ def cut_wav_file():
         
         startMinToMS = convertMinToMS(entry_2.get())
         endMinToMS = convertMinToMS(entry_3.get())
-        '''
-'''
+        
         if(startMinToMS == -1 or endMinToMS == -1):
             string_to_display = "Time Stamp Format is Incorrect"
+
         elif(endMinToMS < startMinToMS):
+
             string_to_display = "_______End is before Start______"
+        
         else:
             if(startMinToMS >= len(sound_file)):
                 new_audio = sound_file
+
             elif(endMinToMS >= len(sound_file)):
                 new_audio = sound_file[:startMinToMS]
+
             else:
                 new_audio = sound_file[:startMinToMS] + sound_file[endMinToMS:]
 
                         
             changed_file = name_of_song + '_Improved.mp3'
             new_audio.export(changed_file, format="mp3")
-            os.rename('/Users/alex/Documents/GitHub/SubMusic/MusicFiles' + '/' + changed_file,
-                      '/Users/alex/Documents/GitHub/SubMusic/changedAudio' + '/' + name_of_song + '.mp3')
-        '''
-'''
-        string_to_display = "____Song has been Modified!_____"
+            os.rename(PARENT_DIR + changed_file, NEW_MUSIC_DIR + name_of_song + '.mp3')
+            string_to_display = "____Song has been Modified!_____"
     
     label_4 = Label(my_window, font = 'Helvetica 40')
     label_4['text'] = string_to_display
@@ -104,5 +110,3 @@ button_1.grid(row=5, column=0)
 button_2 = Button(my_window, text="Exit", bg ='black', fg = 'white', font = 'none 20 bold', command=close_window)
 button_2.grid(row=6, column= 1)
 my_window.mainloop()
-
-'''
