@@ -1,8 +1,6 @@
 # Delete from Middle
 
 <p>
-Music is such a beautiful thing.
-
 I grew up with Indian music and when I was growing up songs were 10 minutes long.
 
 Literally.
