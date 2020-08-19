@@ -42,14 +42,14 @@ Let's get rid of that.
 
 ## Warnings 
 To avoid following runtime warning:
-'''
-RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
-  warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
-'''
+```
+    RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+    warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+```
 run script with -W ignore
-'''
+```
     python -W ignore entryWidget.py
-'''
+```
 
 ## Inspiration
 
