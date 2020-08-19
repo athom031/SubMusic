@@ -2,8 +2,11 @@
 
 <p>
 Music is such a beautiful thing.
+
 I grew up with Indian music and when I was growing up songs were 10 minutes long.
+
 Literally.
+
 10 minutes with 2 minutes being a part in the movie where the storyline is progressing and it is just instrumentals.
 
 Now that isn't what you want for your road trip.
