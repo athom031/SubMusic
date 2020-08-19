@@ -12,6 +12,7 @@ Or when you grow up a little bit and now every Bollywood song has an annoying ra
 
 Let's get rid of that.
 </p>
+
 ##### Python Desktop Widget to Take out sections of Music
 
 1. Search Repository for User Suggested song.
