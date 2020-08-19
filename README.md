@@ -1,5 +1,6 @@
 # Delete from Middle
 
+<p>
 Music is such a beautiful thing.
 I grew up with Indian music and when I was growing up songs were 10 minutes long.
 Literally.
@@ -10,7 +11,7 @@ Now that isn't what you want for your road trip.
 Or when you grow up a little bit and now every Bollywood song has an annoying rap verse for no reason.
 
 Let's get rid of that.
-
+</p>
 ##### Python Desktop Widget to Take out sections of Music
 
 1. Search Repository for User Suggested song.
