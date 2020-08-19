@@ -60,4 +60,4 @@ Not being able to do it easily for so many of my favorite songs.
 ## Demo
 
 Fixing the Humma Song to take out the entire unnecessary pop rap verse.
-![DEMO](https://github.com/athom031/SplitScript/blob/master/Demo.png)
+![DEMO](https://github.com/athom031/SubMusic/blob/master/Demo.png)
